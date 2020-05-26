@@ -7,7 +7,7 @@ Unofficial APIs wrapper for Investing.com website.
 
 ### Example
 ```js
-const investing = require('investing-com-api')
+const { investing } = require('investing-com-api')
 const response = investing('<pairId>') // pairId identifies the data to get, see below
 // response = [ { date: Timestamp, value: Number }, {...}, ... ]
 ```
