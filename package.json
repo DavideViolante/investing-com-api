@@ -1,0 +1,43 @@
+{
+  "name": "investing-com-api",
+  "version": "1.0.0",
+  "description": "Unofficial APIs for Investing.com website.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavideViolante/investing-com-api.git"
+  },
+  "keywords": [
+    "investing",
+    "api",
+    "investing.com",
+    "finance",
+    "markets",
+    "nasdaq",
+    "futures",
+    "currency",
+    "exchange"
+  ],
+  "author": "Davide Violante",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DavideViolante/investing-com-api/issues"
+  },
+  "homepage": "https://github.com/DavideViolante/investing-com-api#readme",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.1.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "mocha": "^7.2.0"
+  }
+}
