@@ -7,16 +7,17 @@ Unofficial APIs wrapper for Investing.com website.
 
 ### Example
 ```js
-const { investing } = require('investing-com-api')
-const response = investing('<pairId>') // pairId identifies the data to get, see below
-// response = [ { date: Timestamp, value: Number }, {...}, ... ]
+async function main () {
+  const { investing } = require('investing-com-api')
+  const response = await investing('<pairId>') // pairId identifies the data to get, see below
+  // response = [ { date: Timestamp, value: Number }, {...}, ... ]
+}
 ```
 
 ### How to find pairId
 1. Go to investing.com page where there is the chart of your interest
 2. View the page source and find `pairId:`
 3. Use the pairId as a String to call the APIs
-
 
 ### Run tests
 - `npm test`
