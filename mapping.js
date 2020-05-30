@@ -149,6 +149,16 @@ exports.mapping = {
     title: 'DASH/USD - Dash US Dollar',
     name: 'DASH/USD'
   },
+  'equities/bank-of-america': {
+    pairId: '243',
+    title: 'Bank of America Corp (NYSE)',
+    name: 'Bank of America'
+  },
+  'equities/jp-morgan-chase': {
+    pairId: '267',
+    title: 'JPMorgan Chase & Co (NYSE)',
+    name: 'JPMorgan'
+  },
   'equities/apple-computer-inc': {
     pairId: '6408',
     title: 'Apple Inc (NASDAQ)',
@@ -174,6 +184,11 @@ exports.mapping = {
     title: 'Facebook Inc (NASDAQ)',
     name: 'Facebook'
   },
+  'equities/adv-micro-device': {
+    pairId: '8274',
+    title: 'Advanced Micro Devices Inc (NASDAQ)',
+    name: 'AMD'
+  },
   'equities/nvidia-corp': {
     pairId: '6497',
     title: 'NVIDIA Corporation (NASDAQ)',
@@ -183,6 +198,11 @@ exports.mapping = {
     pairId: '941155',
     title: 'Alibaba Group Holdings Ltd ADR (NYSE)',
     name: 'Alibaba ADR'
+  },
+  'equities/netflix,-inc.': {
+    pairId: '13063',
+    title: 'Netflix Inc (NASDAQ)',
+    name: 'Netflix'
   },
   'rates-bonds/u.s.-2-year-bond-yield': {
     pairId: '23701',
