@@ -1,4 +1,5 @@
 const axios = require('axios')
+const { mapping } = require('./mapping')
 const { mapResponse } = require('./functions')
 
 function callInvesting (pairId) {
@@ -7,9 +8,9 @@ function callInvesting (pairId) {
     url: 'https://www.investing.com/common/modules/js_instrument_chart/api/data.php',
     params: {
       pair_id: pairId,
-      pair_interval: '86400',
+      pair_interval: '86400', // 1 day
       chart_type: 'area', // 'area', 'candlestick'
-      candle_count: '120',
+      candle_count: '90', // days
       volume_series: 'yes',
       events: 'yes',
       period: ''
@@ -21,16 +22,21 @@ function callInvesting (pairId) {
   })
 }
 
-async function investing (pairId) {
+async function investing (input) {
   try {
-    if (!pairId) {
-      throw Error('No pairId input provided')
+    if (!input) {
+      throw Error('Parameter input is required')
     }
-    const response = await callInvesting(pairId)
+    const endpoint = mapping[input]
+    if (!endpoint) {
+      throw Error(`No mapping found for ${input}, check mapping.js`)
+    }
+    const response = await callInvesting(endpoint.pairId)
     if (!response.data.candles) {
-      throw Error('No response')
+      throw Error('No response.data.candles found')
     }
     const results = mapResponse(response.data.candles)
+    // console.log(results)
     return results
   } catch (err) {
     console.log(err.message)

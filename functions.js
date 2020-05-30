@@ -1,4 +1,3 @@
-
 function mapResponse (array) {
   return array.map(item => ({
     date: item[0],
