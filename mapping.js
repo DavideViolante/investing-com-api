@@ -278,5 +278,15 @@ exports.mapping = {
     pairId: '14206',
     title: 'ProShares UltraShort QQQ (NYSE)',
     name: 'ProShares UltraShort QQQ'
+  },
+  'etfs/market-vectors-gold-miners': {
+    pairId: '40681',
+    title: 'VanEck Vectors Gold Miners ETF (NYSE)',
+    name: 'VanEck Vectors Gold Miners'
+  },
+  'etfs/united-states-oil-fund': {
+    pairId: '44794',
+    title: 'United States Oil Fund, LP (NYSE)',
+    name: 'United States Oil'
   }
 }

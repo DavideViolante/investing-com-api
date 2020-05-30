@@ -43,4 +43,6 @@ async function investing (input) {
   }
 }
 
+// investing('equities/netflix,-inc.')
+
 exports.investing = investing
