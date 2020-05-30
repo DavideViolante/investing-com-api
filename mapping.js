@@ -74,6 +74,11 @@ exports.mapping = {
     title: 'US Coffee C Futures',
     name: 'US Coffee C'
   },
+  'commodities/us-wheat': {
+    pairId: '8917',
+    title: 'US Wheat Contract',
+    name: 'US Wheat'
+  },
   'indices/us-30': {
     pairId: '169',
     title: 'Dow Jones Industrial Average (NYSE)',
