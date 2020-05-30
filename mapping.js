@@ -114,6 +114,11 @@ exports.mapping = {
     title: 'Nikkei 225 (Tokyo)',
     name: 'Nikkei 225'
   },
+  'indices/it-mib-40': {
+    pairId: '177',
+    title: 'FTSE MIB',
+    name: 'FTSE MIB'
+  },
   'crypto/bitcoin/btc-usd': {
     pairId: '945629',
     title: 'BTC/USD - Bitcoin US Dollar',
@@ -258,6 +263,11 @@ exports.mapping = {
     pairId: '8886',
     title: 'UK Gilt Futures',
     name: 'UK Gilt'
+  },
+  'rates-bonds/de-10y-vs-it-10y': {
+    pairId: '1079965',
+    title: 'Italy 10 Year vs Germany 10 Year Spread Bond Yield',
+    name: 'Spread BTP-Bund 10Y'
   },
   'etfs/diamonds-trust': {
     pairId: '504',
