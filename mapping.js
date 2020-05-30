@@ -293,5 +293,25 @@ exports.mapping = {
     pairId: '44794',
     title: 'United States Oil Fund, LP (NYSE)',
     name: 'United States Oil'
+  },
+  'funds/vanguard-500-index-admiral': {
+    pairId: '997364',
+    title: 'Vanguard 500 Index Fund Admiral Shares',
+    name: 'Vanguard 500 Index Admiral'
+  },
+  'funds/vanguard-total-bond-market-ii-idx-i': {
+    pairId: '997994',
+    title: 'Vanguard Total Bond Market Ii Index Fund Investor Shares',
+    name: 'Vanguard Total Bond Market II Index Fund Investor'
+  },
+  'funds/american-funds-capital-income-bldr': {
+    pairId: '997995',
+    title: 'American Funds Capital Income Builder® Class A',
+    name: 'American Funds Capital Income Builder A'
+  },
+  'funds/pimco-commodity-real-ret-strat-inst': {
+    pairId: '1005582',
+    title: 'Pimco Commodityrealreturn Strategy Fund Institutional Class',
+    name: 'PIMCO Commodity Real Return Strategy Institutional'
   }
 }
