@@ -34,6 +34,11 @@ exports.mapping = {
     title: 'EUR/CHF - Euro Swiss Franc',
     name: 'EUR/CHF'
   },
+  'currencies/us-dollar-index': {
+    pairId: '8827',
+    title: 'US Dollar Index Futures',
+    name: 'Dollar index'
+  },
   'commodities/gold': {
     pairId: '8830',
     title: 'Gold Futures',
