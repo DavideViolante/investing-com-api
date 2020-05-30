@@ -209,6 +209,11 @@ exports.mapping = {
     title: 'Netflix Inc (NASDAQ)',
     name: 'Netflix'
   },
+  'rates-bonds/u.s.-3-month-bond-yield': {
+    pairId: '23698',
+    title: 'United States 3-Month Bond Yield (NYSE)',
+    name: 'U.S. 3M'
+  },
   'rates-bonds/u.s.-2-year-bond-yield': {
     pairId: '23701',
     title: 'United States 2-Year (NYSE)',
@@ -238,6 +243,11 @@ exports.mapping = {
     pairId: '8880',
     title: 'US 10 Year T-Note Futures',
     name: 'US 10Y T-Note'
+  },
+  'rates-bonds/us-30-yr-t-bond': {
+    pairId: '8907',
+    title: 'US 30 Year T-Bond Contract',
+    name: 'US 30Y T-Bond'
   },
   'rates-bonds/japan-govt.-bond': {
     pairId: '8986',
