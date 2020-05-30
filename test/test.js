@@ -19,9 +19,9 @@ describe('Tests for Investing.com unofficial APIs', () => {
   })
 
   it('should return data from investing.com', async () => {
-    const response = await investing('177')
+    const response = await investing('currencies/eur-usd')
     assert.ok(response)
     assert.ok(response.length)
-    assert.strictEqual(response.length, 120)
+    assert.strictEqual(response.length, 90)
   })
 })
