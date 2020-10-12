@@ -13,7 +13,7 @@ function callInvesting (pairId) {
       candle_count: '90', // days
       volume_series: 'yes',
       events: 'yes',
-      period: ''
+      period: '1-year'
     },
     headers: {
       'Referer': 'https://www.investing.com/',
