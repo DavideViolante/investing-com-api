@@ -15,7 +15,7 @@ async function main () {
     const response = await investing('currencies/eur-usd')
     // response = [ { date: Timestamp, value: Number }, {...}, ... ]
   } catch (err) {
-    console.error(err);
+    console.error(err)
   }
 }
 ```
