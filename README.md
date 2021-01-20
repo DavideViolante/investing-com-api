@@ -11,8 +11,12 @@ Unofficial APIs for Investing.com website.
 const { investing } = require('investing-com-api')
 
 async function main () {
-  const response = await investing('currencies/eur-usd')
-  // response = [ { date: Timestamp, value: Number }, {...}, ... ]
+  try {
+    const response = await investing('currencies/eur-usd')
+    // response = [ { date: Timestamp, value: Number }, {...}, ... ]
+  } catch (err) {
+    console.error(err);
+  }
 }
 ```
 
