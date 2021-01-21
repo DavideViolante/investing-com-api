@@ -20,16 +20,12 @@ async function main () {
 ```
 
 ### Response
-```json
+```js
 [
-  {
-    "date": Timestamp,
-    "value": Number
-  },
-  {
-    "date": Timestamp,
-    "value": Number
-  },
+  { date: 1579651200000, value: 1.1093 },
+  { date: 1579737600000, value: 1.1054 },
+  { date: 1579824000000, value: 1.1025 },
+  { date: 1580083200000, value: 1.1018 },
   ...
 ]
 ```
