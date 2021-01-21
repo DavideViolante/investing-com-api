@@ -10,7 +10,7 @@ function callInvesting (pairId) {
       pair_id: pairId,
       pair_interval: '86400', // 1 day
       chart_type: 'area', // 'area', 'candlestick'
-      candle_count: '90', // days
+      candle_count: '120', // days
       volume_series: 'yes',
       events: 'yes',
       period: '1-year'
@@ -36,13 +36,10 @@ async function investing (input) {
       throw Error('No response.data.candles found')
     }
     const results = mapResponse(response.data.candles)
-    // console.log(results)
     return results
   } catch (err) {
-    console.log(err.message)
+    console.error(err.message)
   }
 }
-
-// investing('equities/netflix,-inc.')
 
 exports.investing = investing

@@ -23,4 +23,14 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.ok(response)
     assert.ok(response.length)
   })
+
+  it('should return undefined if no input is given', async () => {
+    const response = await investing()
+    assert.strictEqual(response, undefined)
+  })
+
+  it('should return undefined if the endpoint is invalid', async () => {
+    const response = await investing('currencies/invalid')
+    assert.strictEqual(response, undefined)
+  })
 })
