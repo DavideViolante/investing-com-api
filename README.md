@@ -12,7 +12,7 @@ const { investing } = require('investing-com-api')
 
 async function main () {
   try {
-    const response = await investing('currencies/eur-usd')
+    const response = await investing('currencies/eur-usd', 3600, 24, '1-day') //EURxUSD quotes of last 24h (input, interval, candle_count, period)
   } catch (err) {
     console.error(err)
   }
@@ -22,10 +22,10 @@ async function main () {
 ### Response
 ```js
 [
-  { date: 1579651200000, value: 1.1093 },
-  { date: 1579737600000, value: 1.1054 },
-  { date: 1579824000000, value: 1.1025 },
-  { date: 1580083200000, value: 1.1018 },
+  { date: 1623812400000, value: 1.1093 },
+  { date: 1623816000000, value: 1.1054 },
+  { date: 1623819600000, value: 1.1025 },
+  { date: 1623823200000, value: 1.1018 },
   ...
 ]
 ```
@@ -33,6 +33,9 @@ async function main () {
 
 ### Available inputs
 - [mapping.js](https://github.com/DavideViolante/investing-com-api/blob/master/mapping.js)
+- interval (in milliseconds quotes interval)
+- candle_count (maximum number of results)
+- period (n-day or n-month or n-year)
 
 ### Run tests
 - `npm test`
