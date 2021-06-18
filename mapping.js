@@ -189,6 +189,11 @@ exports.mapping = {
     title: 'USD/BRL - US Dollar Brazil Real',
     name: 'USD/BRL'
   },
+  'currencies/us-dollar-index': {
+    pairId: '8827',
+    title: 'US Dollar Index Futures',
+    name: 'Dollar index'
+  },
   'currencies/aed-brl': {
     pairId: '9277',
     title: 'AED/BRL - UAE Dirham Brazil Real',
@@ -218,11 +223,6 @@ exports.mapping = {
     pairId: '10130',
     title: 'SEK/BRL - Swedish Krona Brazil Real',
     name: 'SEK/BRL'
-  },
-  'currencies/us-dollar-index': {
-    pairId: '8827',
-    title: 'US Dollar Index Futures',
-    name: 'Dollar index'
   },
   'commodities/gold': {
     pairId: '8830',
