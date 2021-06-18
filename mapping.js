@@ -14,14 +14,29 @@ exports.mapping = {
     title: 'USD/JPY - US Dollar Japanese Yen',
     name: 'USD/JPY'
   },
+  'currencies/usd-chf': {
+    pairId: '4',
+    title: 'USD/CHF - US Dollar Swiss Franc',
+    name: 'USD/CHF'
+  },
   'currencies/aud-usd': {
     pairId: '5',
     title: 'AUD/USD - Australian Dollar US Dollar',
     name: 'AUD/USD'
   },
+  'currencies/eur-gbp': {
+    pairId: '6',
+    title: 'EUR/GBP - Euro British Pound',
+    name: 'EUR/GBP'
+  },
   'currencies/usd-cad': {
     pairId: '7',
     title: 'USD/CAD - US Dollar Canadian Dollar',
+    name: 'USD/CAD'
+  },
+  'currencies/nzd-usd': {
+    pairId: '8',
+    title: 'NZD/USD - New Zealand Dollar US Dollar',
     name: 'USD/CAD'
   },
   'currencies/eur-jpy': {
@@ -33,6 +48,176 @@ exports.mapping = {
     pairId: '10',
     title: 'EUR/CHF - Euro Swiss Franc',
     name: 'EUR/CHF'
+  },
+  'currencies/gbp-jpy': {
+    pairId: '11',
+    title: 'GBP/JPY - British Pound Japanese Yen',
+    name: 'GBP/JPY'
+  },
+  'currencies/gbp-chf': {
+    pairId: '12',
+    title: 'GBP/CHF - British Pound Swiss Franc',
+    name: 'GBP/CHF'
+  },
+  'currencies/chf-jpy': {
+    pairId: '13',
+    title: 'CHF/JPY - Swiss Franc Japanese Yen',
+    name: 'CHF/JPY'
+  },
+  'currencies/cad-chf': {
+    pairId: '14',
+    title: 'CAD/CHF - Canadian Dollar Swiss Franc',
+    name: 'CAD/CHF'
+  },
+  'currencies/eur-aud': {
+    pairId: '15',
+    title: 'EUR/AUD - Euro Australian Dollar',
+    name: 'EUR/AUD'
+  },
+  'currencies/eur-cad': {
+    pairId: '16',
+    title: 'EUR/CAD - Euro Canadian Dollar',
+    name: 'EUR/CAD'
+  },
+  'currencies/usd-zar': {
+    pairId: '17',
+    title: 'USD/ZAR - US Dollar South African Rand',
+    name: 'USD/ZAR'
+  },
+  'currencies/usd-try': {
+    pairId: '18',
+    title: 'USD/TRY - US Dollar Turkish Lira',
+    name: 'USD/TRY'
+  },
+  'currencies/ars-brl': {
+    pairId: '1473',
+    title: 'ARS/BRL - Argentinian Peso Brazil Real',
+    name: 'ARS/BRL'
+  },
+  'currencies/aud-brl': {
+    pairId: '1485',
+    title: 'AUD/BRL - Australian Dollar Brazil Real',
+    name: 'AUD/BRL'
+  },
+  'currencies/brl-ars': {
+    pairId: '1505',
+    title: 'BRL/ARS - Brazil Real Argentinian Peso',
+    name: 'BRL/ARS'
+  },
+  'currencies/brl-aud': {
+    pairId: '1506',
+    title: 'BRL/AUD - Brazil Real Australian Dollar',
+    name: 'BRL/AUD'
+  },
+  'currencies/brl-cad': {
+    pairId: '1507',
+    title: 'BRL/CAD - Brazil Real Canadian Dollar',
+    name: 'BRL/CAD'
+  },
+  'currencies/brl-chf': {
+    pairId: '1508',
+    title: 'BRL/CHF - Brazil Real Swiss Franc',
+    name: 'BRL/CHF'
+  },
+  'currencies/brl-clp': {
+    pairId: '1509',
+    title: 'BRL/CLP - Brazil Real Chilean Peso',
+    name: 'BRL/CLP'
+  },
+  'currencies/brl-dkk': {
+    pairId: '1510',
+    title: 'BRL/DKK - Brazil Real Danish Krone',
+    name: 'BRL/DKK'
+  },
+  'currencies/brl-hkd': {
+    pairId: '1512',
+    title: 'BRL/HKD - Brazil Real Hong Kong Dollar',
+    name: 'BRL/HKD'
+  },
+  'currencies/brl-jpy': {
+    pairId: '1513',
+    title: 'BRL/JPY - Brazil Real Japanese Yen',
+    name: 'BRL/JPY'
+  },
+  'currencies/brl-mxn': {
+    pairId: '1514',
+    title: 'BRL/MXN - Brazil Real Mexican Peso',
+    name: 'BRL/MXN'
+  },
+  'currencies/brl-sgd': {
+    pairId: '1515',
+    title: 'BRL/SGD - Brazil Real Singapore Dollar',
+    name: 'BRL/SGD'
+  },
+  'currencies/brl-usd': {
+    pairId: '1516',
+    title: 'BRL/USD - Brazil Real US Dollar',
+    name: 'BRL/USD'
+  },
+  'currencies/cad-brl': {
+    pairId: '1523',
+    title: 'CAD/BRL - Canadian Dollar Brazil Real',
+    name: 'CAD/BRL'
+  },
+  'currencies/chf-brl': {
+    pairId: '1544',
+    title: 'CHF/BRL - Swiss Franc Brazil Real',
+    name: 'CHF/BRL'
+  },
+  'currencies/eur-brl': {
+    pairId: '1617',
+    title: 'EUR/BRL - Euro Brazil Real',
+    name: 'EUR/BRL'
+  },
+  'currencies/gbp-brl': {
+    pairId: '1736',
+    title: 'GBP/BRL - British Pound Brazil Real',
+    name: 'GBP/BRL'
+  },
+  'currencies/jpy-brl': {
+    pairId: '1890',
+    title: 'JPY/BRL - Japanese Yen Brazil Real',
+    name: 'JPY/BRL'
+  },
+  'currencies/sgd-brl': {
+    pairId: '2027',
+    title: 'SGD/BRL - Singapore Dollar Brazil Real',
+    name: 'SGD/BRL'
+  },
+  'currencies/usd-brl': {
+    pairId: '2103',
+    title: 'USD/BRL - US Dollar Brazil Real',
+    name: 'USD/BRL'
+  },
+  'currencies/aed-brl': {
+    pairId: '9277',
+    title: 'AED/BRL - UAE Dirham Brazil Real',
+    name: 'AED/BRL'
+  },
+  'currencies/cny-brl': {
+    pairId: '9493',
+    title: 'CNY/BRL - Chinese Yuan Brazil Real',
+    name: 'CNY/BRL'
+  },
+  'currencies/dkk-brl': {
+    pairId: '9575',
+    title: 'DKK/BRL - Danish Krone Brazil Real',
+    name: 'DKK/BRL'
+  },
+  'currencies/hkd-brl': {
+    pairId: '9617',
+    title: 'HKD/BRL - Hong Kong Dollar Brazil Real',
+    name: 'HKD/BRL'
+  },
+  'currencies/nok-brl': {
+    pairId: '9841',
+    title: 'NOK/BRL - Norwegian Krone Brazil Real',
+    name: 'NOK/BRL'
+  },
+  'currencies/sek-brl': {
+    pairId: '10130',
+    title: 'SEK/BRL - Swedish Krona Brazil Real',
+    name: 'SEK/BRL'
   },
   'currencies/us-dollar-index': {
     pairId: '8827',
