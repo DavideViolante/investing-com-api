@@ -45,3 +45,6 @@ async function main () {
 
 ### Author
 - [Davide Violante](https://github.com/DavideViolante/)
+
+### Contributor
+- [Gustavo Carneiro](https://github.com/gustavomfc/)
