@@ -24,10 +24,17 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.ok(response.length)
   })
 
-  it('shouw return data from investing.com with an 5min (1800s) interval between them', async () => {
+  it('should return data from investing.com with an 5min (1800s) interval between them', async () => {
     const response = await investing('currencies/eur-usd', 1800)
     const diff = response[1].date - response[0].date
     assert.ok(diff === (1800 * 1000))
+  })
+
+  it('should return data from investing.com with an 5min (1800s) interval between them and a maximum of 12 results', async () => {
+    const response = await investing('currencies/eur-usd', 1800, 12)
+    const diff = response[1].date - response[0].date
+    assert.ok(diff === (1800 * 1000))
+    assert.ok(response.length === 12)
   })
 
   it('should return data from investing.com with an 5min (1800s) interval between them and a maximum of 24 results in a 2-hour max time window', async () => {
