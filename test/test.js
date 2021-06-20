@@ -30,7 +30,7 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.ok(diff === (1800 * 1000))
   })
 
-  it('should return data from investing.com with an 5min (1800s) interval between them and a maximum of 12 results', async () => {
+  xit('should return data from investing.com with an 5min (1800s) interval between them and a maximum of 12 results', async () => {
     const response = await investing('currencies/eur-usd', 1800, 12)
     const diff = response[1].date - response[0].date
     assert.ok(diff === (1800 * 1000))
