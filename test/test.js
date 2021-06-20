@@ -32,7 +32,9 @@ describe('Tests for Investing.com unofficial APIs', () => {
 
   it('should return data from investing.com with an 5min (1800s) interval between them and a maximum of 24 results in a 2-hour max time window', async () => {
     const response = await investing('currencies/eur-usd', 1800, 24, '2-hour')
-    assert.ok((response[1].date - response[response.length - 1].date) <= 7200000)
+    const diff = response[1].date - response[response.length - 1].date
+    assert.ok(diff <= 7200000)
+    assert.ok(response.length === 24)
   })
 
   it('should return data from investing.com with an 5min (1800s) interval between them and a maximum of 24 results in a 2-hour time window', async () => {
