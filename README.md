@@ -12,7 +12,8 @@ const { investing } = require('investing-com-api')
 
 async function main () {
   try {
-    const response = await investing('currencies/eur-usd', 3600, 24, '1-day') //EURxUSD quotes of last 24h (input, interval, candle_count, period)
+    const response1 = await investing('currencies/eur-usd')
+    const response2 = await investing('currencies/eur-usd', 3600, 24, '1-day') // With optional params
   } catch (err) {
     console.error(err)
   }
@@ -32,10 +33,10 @@ async function main () {
 
 
 ### Available inputs
-- [mapping.js](https://github.com/DavideViolante/investing-com-api/blob/master/mapping.js)
-- interval (in milliseconds quotes interval)
-- candle_count (maximum number of results)
-- period (n-day or n-month or n-year)
+- input (String) required, see [mapping.js](https://github.com/DavideViolante/investing-com-api/blob/master/mapping.js)
+- interval (Number in seconds), data interval
+- candleCount (Number) Max number of results
+- period (String) time window: n-day, n-month or n-year where n is a number
 
 ### Run tests
 - `npm test`
@@ -46,5 +47,5 @@ async function main () {
 ### Author
 - [Davide Violante](https://github.com/DavideViolante/)
 
-### Contributor
+### Contributors
 - [Gustavo Carneiro](https://github.com/gustavomfc/)
