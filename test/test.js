@@ -41,7 +41,7 @@ describe('Tests for Investing.com unofficial APIs', () => {
     const response = await investing('currencies/eur-usd', 1800, 24, '2-hour')
     const diff1 = response[1].date - response[0].date
     const diff2 = response[1].date - response[response.length - 1].date
-    assert.ok(diff === (1800 * 1000))
+    assert.ok(diff1 === (1800 * 1000))
     assert.ok(diff2 <= (7200 * 1000))
     assert.ok(response.length === 24)
   })
