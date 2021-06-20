@@ -18,10 +18,32 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.strictEqual(mockData[1][1], mappedResponse[1].value)
   })
 
-  it('should return data from investing.com', async () => {
+  it('should return data from investing.com with just input parameter', async () => {
     const response = await investing('currencies/eur-usd')
     assert.ok(response)
     assert.ok(response.length)
+  })
+
+  it('should return data from investing.com with an 5min (1800s) interval between them', async () => {
+    const response = await investing('currencies/eur-usd', 1800)
+    const diff = response[1].date - response[0].date
+    assert.ok(diff === (1800 * 1000))
+  })
+
+  xit('should return data from investing.com with an 5min (1800s) interval between them and a maximum of 12 results', async () => {
+    const response = await investing('currencies/eur-usd', 1800, 12)
+    const diff = response[1].date - response[0].date
+    assert.ok(diff === (1800 * 1000))
+    assert.ok(response.length === 12)
+  })
+
+  it('should return data from investing.com with an 5min (1800s) interval between them and a maximum of 24 results in a 2-hour time window', async () => {
+    const response = await investing('currencies/eur-usd', 1800, 24, '2-hour')
+    const diff1 = response[1].date - response[0].date
+    const diff2 = response[1].date - response[response.length - 1].date
+    assert.ok(diff1 === (1800 * 1000))
+    assert.ok(diff2 <= (7200 * 1000))
+    assert.ok(response.length === 24)
   })
 
   it('should return undefined if no input is given', async () => {

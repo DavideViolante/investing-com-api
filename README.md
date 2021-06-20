@@ -12,7 +12,8 @@ const { investing } = require('investing-com-api')
 
 async function main () {
   try {
-    const response = await investing('currencies/eur-usd')
+    const response1 = await investing('currencies/eur-usd')
+    const response2 = await investing('currencies/eur-usd', 3600, 24, '1-day') // With optional params
   } catch (err) {
     console.error(err)
   }
@@ -22,17 +23,20 @@ async function main () {
 ### Response
 ```js
 [
-  { date: 1579651200000, value: 1.1093 },
-  { date: 1579737600000, value: 1.1054 },
-  { date: 1579824000000, value: 1.1025 },
-  { date: 1580083200000, value: 1.1018 },
+  { date: 1623812400000, value: 1.1093 },
+  { date: 1623816000000, value: 1.1054 },
+  { date: 1623819600000, value: 1.1025 },
+  { date: 1623823200000, value: 1.1018 },
   ...
 ]
 ```
 
 
 ### Available inputs
-- [mapping.js](https://github.com/DavideViolante/investing-com-api/blob/master/mapping.js)
+- input (String) required, see [mapping.js](https://github.com/DavideViolante/investing-com-api/blob/master/mapping.js)
+- interval (Number in seconds), data interval
+- candleCount (Number) Max number of results
+- period (String) time window: n-day, n-month or n-year where n is a number
 
 ### Run tests
 - `npm test`
@@ -42,3 +46,6 @@ async function main () {
 
 ### Author
 - [Davide Violante](https://github.com/DavideViolante/)
+
+### Contributors
+- [Gustavo Carneiro](https://github.com/gustavomfc/)
