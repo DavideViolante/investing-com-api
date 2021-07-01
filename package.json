@@ -1,6 +1,6 @@
 {
   "name": "investing-com-api",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "Unofficial APIs for Investing.com website.",
   "main": "index.js",
   "scripts": {
