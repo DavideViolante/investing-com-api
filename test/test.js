@@ -10,6 +10,16 @@ const mockData = [
 ];
 
 describe('Tests for Investing.com unofficial APIs', () => {
+  it('should return undefined and print error if no input is given', async () => {
+    const response = await investing();
+    assert.strictEqual(response, undefined);
+  });
+
+  it('should return undefined and print error if input is invalid', async () => {
+    const response = await investing('currencies/invalid');
+    assert.strictEqual(response, undefined);
+  });
+
   it('should map an array of arrays to array of objects', () => {
     const mappedResponse = mapResponse(mockData);
     assert.strictEqual(mockData[0][0], mappedResponse[0].date);
@@ -18,61 +28,88 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.strictEqual(mockData[1][1], mappedResponse[1].value);
   });
 
-  it('should return data from investing.com with just input parameter', async () => {
+  it('should return data from investing.com with default params', async () => {
     const response = await investing('currencies/eur-usd');
+    const len = response.length;
     assert.ok(response);
-    assert.ok(response.length);
-    assert.ok(response.length === 24);
+    assert.ok(len);
+    assert.ok(len >= 20 && len <= 23);
   });
 
-  it('should return data from investing.com with default interval', async () => {
-    const interval = 3600;
-    const response = await investing('currencies/eur-usd', interval);
-    const diff = response[1].date - response[0].date;
-    assert.ok(diff === (interval * 1000));
-    assert.ok(response.length === 24);
+  it('should return error with invalid period', async () => {
+    const response = await investing('currencies/eur-usd', '1M');
+    assert.strictEqual(response, undefined);
   });
 
-  it('should return data from investing.com with half default interval', async () => {
-    const interval = 1800;
-    const response = await investing('currencies/eur-usd', interval);
-    const diff = response[1].date - response[0].date;
-    assert.ok(diff === (interval * 1000));
-    assert.ok(response.length === 48);
+  it('should return data from investing.com with custom period (1D, 1W)', async () => {
+    const dayPeriods = ['P1D', 'P1W'];
+    for (const period of dayPeriods) {
+      const response = await investing('currencies/eur-usd', period);
+      const len = response.length;
+      assert.ok(response);
+      assert.ok(len);
+    }
   });
 
-  it('should return data from investing.com with 1/4 default interval', async () => {
-    const interval = 900;
-    const response = await investing('currencies/eur-usd', interval);
-    const diff = response[1].date - response[0].date;
-    assert.ok(diff === (interval * 1000));
-    assert.ok(response.length === 96);
+  it('should return data from investing.com with custom period (1M, 3M, 6M)', async () => {
+    const monthPeriods = ['P1M', 'P3M', 'P6M'];
+    for (const period of monthPeriods) {
+      const response = await investing('currencies/eur-usd', period);
+      const len = response.length;
+      assert.ok(response);
+      assert.ok(len);
+    }
+  });
+
+  it('should return data from investing.com with custom period (1Y, 5Y, MAX)', async () => {
+    const yearPeriods = ['P1Y', 'P5Y', 'MAX'];
+    for (const period of yearPeriods) {
+      const response = await investing('currencies/eur-usd', period);
+      const len = response.length;
+      assert.ok(response);
+      assert.ok(len);
+    }
   });
 
   it('should return error with invalid interval', async () => {
-    const interval = 1200;
-    const response = await investing('currencies/eur-usd', interval);
+    const response = await investing('currencies/eur-usd', 'P1M', '15M');
     assert.strictEqual(response, undefined);
   });
 
-  // eslint-disable-next-line max-len
-  it('should return data from investing.com with half default interval and max 24 results in a 2-hour period', async () => {
-    const interval = 1800;
-    const response = await investing('currencies/eur-usd', interval, 24, '2-hour');
-    const diff1 = response[1].date - response[0].date;
-    const diff2 = response[1].date - response[response.length - 1].date;
-    assert.ok(diff1 === (interval * 1000));
-    assert.ok(diff2 <= (interval * 4 * 1000));
-    assert.ok(response.length === 24);
+  it('should return data from investing.com with custom interval (1M, 5M, 15M, 30M)', async () => {
+    const minuteIntervals = ['PT1M', 'PT5M', 'PT15M', 'PT30M'];
+    for (const interval of minuteIntervals) {
+      const response = await investing('currencies/eur-usd', 'P1M', interval);
+      const len = response.length;
+      assert.ok(response);
+      assert.ok(len);
+    }
+  }).timeout(5000);
+
+  it('should return data from investing.com with custom interval (1H, 5H)', async () => {
+    const minuteIntervals = ['PT1H', 'PT5H'];
+    for (const interval of minuteIntervals) {
+      const response = await investing('currencies/eur-usd', 'P1M', interval);
+      const len = response.length;
+      assert.ok(response);
+      assert.ok(len);
+    }
   });
 
-  it('should return undefined if no input is given', async () => {
-    const response = await investing();
-    assert.strictEqual(response, undefined);
+  it('should return data from investing.com with custom interval (1D, 1W, 1M)', async () => {
+    const minuteIntervals = ['P1D', 'P1W', 'P1M'];
+    for (const interval of minuteIntervals) {
+      const response = await investing('currencies/eur-usd', 'P1M', interval);
+      const len = response.length;
+      assert.ok(response);
+      assert.ok(len);
+    }
   });
 
-  it('should return undefined if the endpoint is invalid', async () => {
-    const response = await investing('currencies/invalid');
-    assert.strictEqual(response, undefined);
+  it('should return data from investing.com with custom period and interval', async () => {
+    const response = await investing('currencies/eur-usd', 'P3M', 'PT1H');
+    const len = response.length;
+    assert.ok(response);
+    assert.ok(len);
   });
 });

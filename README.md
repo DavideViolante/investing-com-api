@@ -15,7 +15,7 @@ const { investing } = require('investing-com-api');
 async function main() {
   try {
     const response1 = await investing('currencies/eur-usd');
-    const response2 = await investing('currencies/eur-usd', 3600, 24, '1-day'); // With optional params
+    const response2 = await investing('currencies/eur-usd', 'P1M', 'P1D'); // With optional params
   } catch (err) {
     console.error(err);
   }
@@ -34,12 +34,12 @@ async function main() {
 ```
 
 
-### Available inputs
+### Inputs
 Only input is required, other params are optional.
-- **input** _String_: input string, see [mapping.js](https://github.com/DavideViolante/investing-com-api/blob/master/mapping.js) keys.
-- **interval** _Number_: interval between results in seconds, only some values are accepted such as 900, 1800, 3600, 18000, etc.
-- **candleCount** _Number_: number of total results, seems it must be >10, it depends on interval and period too.
-- **period** _String_: n-hour, n-day, n-month or n-year where n is a number.
+- **input** _String_: input string, see [mapping.js](https://github.com/DavideViolante/investing-com-api/blob/master/mapping.js) keys. (Required)
+- **period** _String_: Period of time, window size. Default P1M (1 month). Valid values: P1D, P1W, P1M, P3M, P6M, P1Y, P5Y, MAX.
+- **interval** _Number_: Interval between results. Default P1D (1 day). Valid values: PT1M, PT5M, PT15M, PT30M, PT1H, PT5H, P1D, P1W, P1M.
+- **pointscount** _Number_: number of total results. Valid values seems to be 60, 70 or 120.
 
 ### Run tests
 `npm test`
