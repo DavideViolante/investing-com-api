@@ -112,4 +112,4 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.ok(response);
     assert.ok(len);
   });
-}).timeout(5000);
+});
