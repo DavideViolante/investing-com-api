@@ -84,7 +84,7 @@ describe('Tests for Investing.com unofficial APIs', () => {
       assert.ok(response);
       assert.ok(len);
     }
-  }).timeout(5000);
+  });
 
   it('should return data from investing.com with custom interval (1H, 5H)', async () => {
     const minuteIntervals = ['PT1H', 'PT5H'];
@@ -112,4 +112,4 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.ok(response);
     assert.ok(len);
   });
-});
+}).timeout(5000);
