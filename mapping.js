@@ -224,6 +224,11 @@ exports.mapping = {
     title: 'SEK/BRL - Swedish Krona Brazil Real',
     name: 'SEK/BRL',
   },
+  'currencies/usd-krw': {
+    pairId: '650',
+    title: 'USD/KRW - US Dollar Korean Won',
+    name: 'USD/KRW',
+  },
   'currencies/xau-usd': {
     pairId: '68',
     title: 'XAU/USD - Gold Spot US Dollar',
