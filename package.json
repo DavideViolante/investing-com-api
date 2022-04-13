@@ -1,6 +1,6 @@
 {
   "name": "investing-com-api",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Unofficial APIs for Investing.com website.",
   "main": "index.js",
   "scripts": {
@@ -34,7 +34,7 @@
     "axios": "^0.26.1"
   },
   "devDependencies": {
-    "eslint": "^8.12.0",
+    "eslint": "^8.13.0",
     "eslint-config-google": "^0.14.0",
     "mocha": "^9.2.2",
     "nyc": "^15.1.0"
