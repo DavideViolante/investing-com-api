@@ -112,4 +112,16 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.ok(response);
     assert.ok(len);
   });
+
+  it('should return data from investing.com with invalid pointscount', async () => {
+    const response = await investing('currencies/eur-usd', 'P1M', 'P1D', 20);
+    assert.strictEqual(response, undefined);
+  });
+
+  it('should return data from investing.com with custom pointscount', async () => {
+    const response = await investing('currencies/eur-usd', 'P1M', 'P1D', 60);
+    const len = response.length;
+    assert.ok(response);
+    assert.ok(len);
+  });
 });
