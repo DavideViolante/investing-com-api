@@ -1,3 +1,3 @@
 declare module "investing-com-api" {
-    export function investing(input: string, interval?: number, candleCount?: number, period?: string): any[];
+    export function investing(input: string, period?: string, interval?: string, pointscount?: number): any[];
 }

@@ -224,6 +224,31 @@ exports.mapping = {
     title: 'SEK/BRL - Swedish Krona Brazil Real',
     name: 'SEK/BRL',
   },
+  'currencies/usd-krw': {
+    pairId: '650',
+    title: 'USD/KRW - US Dollar Korean Won',
+    name: 'USD/KRW',
+  },
+  'currencies/xau-usd': {
+    pairId: '68',
+    title: 'XAU/USD - Gold Spot US Dollar',
+    name: 'XAU/USD - Gold Spot US Dollar',
+  },
+  'currencies/xag-usd': {
+    pairId: '69',
+    title: 'XAG/USD - Silver Spot US Dollar',
+    name: 'XAG/USD - Gold Spot US Dollar',
+  },
+  'currencies/xpd-usd': {
+    pairId: '1043108',
+    title: 'XPD/USD - Palladium Spot US Dollar',
+    name: 'XPD/USD - Palladium Spot US Dollar',
+  },
+  'currencies/xpt-usd': {
+    pairId: '1043107',
+    title: 'XPT/USD - Platinum Spot US Dollar',
+    name: 'XPT/USD - Platinum Spot US Dollar',
+  },
   'commodities/gold': {
     pairId: '8830',
     title: 'Gold Futures',
