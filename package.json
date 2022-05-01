@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/DavideViolante/investing-com-api#readme",
   "dependencies": {
-    "axios": "^0.26.1"
+    "axios": "^0.27.2"
   },
   "devDependencies": {
     "eslint": "^8.13.0",
