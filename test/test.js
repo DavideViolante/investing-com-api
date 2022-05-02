@@ -113,7 +113,7 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.ok(len);
   });
 
-  it('should return data from investing.com with invalid pointscount', async () => {
+  it('should return error with invalid pointscount', async () => {
     const response = await investing('currencies/eur-usd', 'P1M', 'P1D', 20);
     assert.strictEqual(response, undefined);
   });
