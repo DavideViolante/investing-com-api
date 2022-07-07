@@ -47,6 +47,9 @@ Only input is required, other params are optional.
 ### Run lint
 `npm run lint`
 
+### Contribute
+PRs are welcome to add more elements to the [mapping.js](https://github.com/DavideViolante/investing-com-api/blob/master/mapping.js) file.
+
 ### Author
 - [Davide Violante](https://github.com/DavideViolante/)
 
