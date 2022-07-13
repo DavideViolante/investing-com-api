@@ -549,4 +549,19 @@ exports.mapping = {
     title: 'Pimco Commodityrealreturn Strategy Fund Institutional Class',
     name: 'PIMCO Commodity Real Return Strategy Institutional',
   },
+  'indices/s-p-cnx-nifty-chart': {
+    pairId: '17940',
+    title: 'Nifty 50 (NSEI)',
+    name: 'NSEI'
+  },
+    'indices/bank-nifty': {
+    pairId: '17950',
+    title: 'Nifty Bank (NSEBANK)',
+    name: 'NSEBANK'
+  },
+  'indices/india-50-futures-chart?cid=101810': {
+    pairId: '101810',
+    title: 'SGX Nifty 50 Futures',
+    name: 'SINc1'
+  },
 };
