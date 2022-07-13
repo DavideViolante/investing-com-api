@@ -552,16 +552,16 @@ exports.mapping = {
   'indices/s-p-cnx-nifty-chart': {
     pairId: '17940',
     title: 'Nifty 50 (NSEI)',
-    name: 'NSEI'
+    name: 'Nifty 50'
   },
-    'indices/bank-nifty': {
+  'indices/bank-nifty': {
     pairId: '17950',
     title: 'Nifty Bank (NSEBANK)',
-    name: 'NSEBANK'
+    name: 'Nifty Bank'
   },
-  'indices/india-50-futures-chart?cid=101810': {
+  'indices/india-50-futures-chart': {
     pairId: '101810',
     title: 'SGX Nifty 50 Futures',
-    name: 'SINc1'
+    name: 'SGX Nifty 50'
   },
 };
