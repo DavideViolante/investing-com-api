@@ -554,14 +554,39 @@ exports.mapping = {
     title: 'Nifty 50 (NSEI)',
     name: 'Nifty 50',
   },
+  'indices/india-50-futures': {
+    pairId: '8985',
+    title: 'Nifty 50 Futures',
+    name: 'Nifty 50',
+  },
   'indices/bank-nifty': {
     pairId: '17950',
     title: 'Nifty Bank (NSEBANK)',
     name: 'Nifty Bank',
   },
-  'indices/india-50-futures': {
+  'indices/bank-nifty-futures': {
+    pairId: '104423',
+    title: 'Bank NIFTY Futures',
+    name: 'Bank NIFTY',
+  },
+  'indices/india-50-futures?cid=101810': {
     pairId: '101810',
     title: 'SGX Nifty 50 Futures',
     name: 'SGX Nifty 50',
+  },
+  'indices/us-30-futures?cid=1175152': {
+    pairId: '1175152',
+    title: 'US 30 Cash (US30)',
+    name: 'US 30',
+  },
+  'indices/nq-100-futures?cid=1175151': {
+    pairId: '1175151',
+    title: 'US Tech 100 Cash (USTECH)',
+    name: 'US Tech 100',
+  },
+  'indices/germany-30-futures': {
+    pairId: '8826',
+    title: 'DAX Futures',
+    name: 'DAX',
   },
 };
