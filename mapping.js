@@ -299,19 +299,49 @@ exports.mapping = {
     title: 'Dow Jones Industrial Average (NYSE)',
     name: 'Dow 30',
   },
+  'indices/us-30-futures': {
+    pairId: '8873',
+    title: 'Dow Jones Futures',
+    name: 'Dow Jones',
+  },
+  'indices/us-30-futures?cid=1175152': {
+    pairId: '1175152',
+    title: 'US 30 Cash (US30)',
+    name: 'US 30',
+  },
   'indices/nq-100': {
     pairId: '20',
     title: 'Nasdaq 100 (NASDAQ)',
     name: 'Nasdaq 100',
+  },
+  'indices/nq-100-futures': {
+    pairId: '8874',
+    title: 'Nasdaq 100 Futures',
+    name: 'Nasdaq 100',
+  },
+  'indices/nq-100-futures?cid=1175151': {
+    pairId: '1175151',
+    title: 'US Tech 100 Cash (USTECH)',
+    name: 'US Tech 100',
   },
   'indices/us-spx-500': {
     pairId: '166',
     title: 'S&P 500 (NYSE)',
     name: 'S&P 500',
   },
+  'indices/us-spx-500-futures': {
+    pairId: '8839',
+    title: 'S&P 500 Futures',
+    name: 'S&P 500',
+  },
   'indices/germany-30': {
     pairId: '172',
     title: 'DAX (Xetra)',
+    name: 'DAX',
+  },
+  'indices/germany-30-futures': {
+    pairId: '8826',
+    title: 'DAX Futures',
     name: 'DAX',
   },
   'indices/uk-100': {
@@ -333,6 +363,31 @@ exports.mapping = {
     pairId: '177',
     title: 'FTSE MIB',
     name: 'FTSE MIB',
+  },
+  'indices/s-p-cnx-nifty': {
+    pairId: '17940',
+    title: 'Nifty 50 (NSEI)',
+    name: 'Nifty 50',
+  },
+  'indices/india-50-futures': {
+    pairId: '8985',
+    title: 'Nifty 50 Futures',
+    name: 'Nifty 50',
+  },
+  'indices/india-50-futures?cid=101810': {
+    pairId: '101810',
+    title: 'SGX Nifty 50 Futures',
+    name: 'SGX Nifty 50',
+  },
+  'indices/bank-nifty': {
+    pairId: '17950',
+    title: 'Nifty Bank (NSEBANK)',
+    name: 'Nifty Bank',
+  },
+  'indices/bank-nifty-futures': {
+    pairId: '104423',
+    title: 'Bank NIFTY Futures',
+    name: 'Bank NIFTY',
   },
   'crypto/bitcoin/btc-usd': {
     pairId: '945629',
@@ -546,47 +601,7 @@ exports.mapping = {
   },
   'funds/pimco-commodity-real-ret-strat-inst': {
     pairId: '1005582',
-    title: 'Pimco Commodityrealreturn Strategy Fund Institutional Class',
+    title: 'Pimco Commodity Real Return Strategy Fund Institutional Class',
     name: 'PIMCO Commodity Real Return Strategy Institutional',
-  },
-  'indices/s-p-cnx-nifty': {
-    pairId: '17940',
-    title: 'Nifty 50 (NSEI)',
-    name: 'Nifty 50',
-  },
-  'indices/india-50-futures': {
-    pairId: '8985',
-    title: 'Nifty 50 Futures',
-    name: 'Nifty 50',
-  },
-  'indices/bank-nifty': {
-    pairId: '17950',
-    title: 'Nifty Bank (NSEBANK)',
-    name: 'Nifty Bank',
-  },
-  'indices/bank-nifty-futures': {
-    pairId: '104423',
-    title: 'Bank NIFTY Futures',
-    name: 'Bank NIFTY',
-  },
-  'indices/india-50-futures?cid=101810': {
-    pairId: '101810',
-    title: 'SGX Nifty 50 Futures',
-    name: 'SGX Nifty 50',
-  },
-  'indices/us-30-futures?cid=1175152': {
-    pairId: '1175152',
-    title: 'US 30 Cash (US30)',
-    name: 'US 30',
-  },
-  'indices/nq-100-futures?cid=1175151': {
-    pairId: '1175151',
-    title: 'US Tech 100 Cash (USTECH)',
-    name: 'US Tech 100',
-  },
-  'indices/germany-30-futures': {
-    pairId: '8826',
-    title: 'DAX Futures',
-    name: 'DAX',
   },
 };
