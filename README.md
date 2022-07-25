@@ -52,6 +52,3 @@ PRs are welcome to add more elements to the [mapping.js](https://github.com/Davi
 
 ### Author
 - [Davide Violante](https://github.com/DavideViolante/)
-
-### Contributors
-- [Gustavo Carneiro](https://github.com/gustavomfc/)
