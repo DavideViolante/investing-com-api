@@ -539,6 +539,76 @@ exports.mapping = {
     title: 'Italy 10 Year vs Germany 10 Year Spread Bond Yield',
     name: 'Spread BTP-Bund 10Y',
   },
+  'rates-bonds/australia-30-year': {
+    pairId: '1052473',
+    title: 'Australia 30-Year Bond Yield',
+    name: 'Australia 30Y',
+  },
+  'rates-bonds/australia-20-year': {
+    pairId: '1052472',
+    title: 'Australia 20-Year Bond Yield',
+    name: 'Australia 20Y',
+  },
+  'rates-bonds/australia-15-year-bond-yield': {
+    pairId: '23880',
+    title: 'Australia 15-Year Bond Yield',
+    name: 'Australia 15Y',
+  },
+  'rates-bonds/australia-12-year-bond-yield': {
+    pairId: '23879',
+    title: 'Australia 12-Year Bond Yield',
+    name: 'Australia 12Y',
+  },
+  'rates-bonds/australia-10-year-bond-yield': {
+    pairId: '23878',
+    title: 'Australia 10-Year Bond Yield',
+    name: 'Australia 10Y',
+  },
+  'rates-bonds/australia-9-year-bond-yield': {
+    pairId: '23877',
+    title: 'Australia 9-Year Bond Yield',
+    name: 'Australia 9Y',
+  },
+  'rates-bonds/australia-8-year-bond-yield': {
+    pairId: '23876',
+    title: 'Australia 8-Year Bond Yield',
+    name: 'Australia 8Y',
+  },
+  'rates-bonds/australia-7-year-bond-yield': {
+    pairId: '23875',
+    title: 'Australia 7-Year Bond Yield',
+    name: 'Australia 7Y',
+  },
+  'rates-bonds/australia-6-year-bond-yield': {
+    pairId: '23874',
+    title: 'Australia 6-Year Bond Yield',
+    name: 'Australia 6Y',
+  },
+  'rates-bonds/australia-5-year-bond-yield': {
+    pairId: '23873',
+    title: 'Australia 5-Year Bond Yield',
+    name: 'Australia 5Y',
+  },
+  'rates-bonds/australia-4-year-bond-yield': {
+    pairId: '23872',
+    title: 'Australia 4-Year Bond Yield',
+    name: 'Australia 4Y',
+  },
+  'rates-bonds/australia-3-year-bond-yield': {
+    pairId: '23871',
+    title: 'Australia 3-Year Bond Yield',
+    name: 'Australia 3Y',
+  },
+  'rates-bonds/australia-2-year-bond-yield': {
+    pairId: '23870',
+    title: 'Australia 2-Year Bond Yield',
+    name: 'Australia 2Y',
+  },
+  'rates-bonds/australia-1-year-bond-yield': {
+    pairId: '23869',
+    title: 'Australia 1-Year Bond Yield',
+    name: 'Australia 1Y',
+  },
   'etfs/diamonds-trust': {
     pairId: '504',
     title: 'SPDR® Dow Jones Industrial Average ETF Trust (NYSE)',
