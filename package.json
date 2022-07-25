@@ -1,12 +1,12 @@
 {
   "name": "investing-com-api",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "description": "Unofficial APIs for Investing.com website.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./",
     "test": "nyc mocha --timeout 5000",
-    "coverage": "nyc --reporter=lcov --reporter=text mocha"
+    "coverage": "nyc --reporter=lcov --reporter=text mocha --timeout 5000"
   },
   "repository": {
     "type": "git",
