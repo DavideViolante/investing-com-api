@@ -10,7 +10,7 @@ function mapResponse(array) {
     price_open: item[1],
     price_high: item[2],
     price_low: item[3],
-    price_close: item[4]
+    price_close: item[4],
   }));
 }
 
