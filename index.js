@@ -45,9 +45,6 @@ async function investing(input, period = 'P1M', interval = 'P1D', pointscount = 
       throw Error(`No mapping found for ${input}, check mapping.js`);
     }
     const { data } = await callInvesting(endpoint.pairId, period, interval, pointscount);
-    /* if (!data.data) {
-      throw Error('No data.data found, please check your params');
-    } */
     const results = mapResponse(data.data);
     return results;
   } catch (err) {

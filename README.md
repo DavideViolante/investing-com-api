@@ -25,10 +25,22 @@ async function main() {
 ### Response
 ```js
 [
-  { date: 1623812400000, value: 1.1093 },
-  { date: 1623816000000, value: 1.1054 },
-  { date: 1623819600000, value: 1.1025 },
-  { date: 1623823200000, value: 1.1018 },
+  {
+    date: 1659398400000,
+    value: 1.0264,
+    price_open: 1.0264,
+    price_high: 1.0294,
+    price_low: 1.0155,
+    price_close: 1.0157
+  },
+  {
+    date: 1659484800000,
+    value: 1.0158,
+    price_open: 1.0158,
+    price_high: 1.0209,
+    price_low: 1.0126,
+    price_close: 1.0136
+  },
   ...
 ]
 ```
