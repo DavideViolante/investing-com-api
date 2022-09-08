@@ -609,6 +609,106 @@ exports.mapping = {
     title: 'Australia 1-Year Bond Yield',
     name: 'Australia 1Y',
   },
+  'rates-bonds/india-3-month-bond-yield': {
+    pairId: '24003',
+    title: 'India 3-Month Bond Yield',
+    name: 'India 3M',
+  },
+  'rates-bonds/india-6-month-bond-yield': {
+    pairId: '24004',
+    title: 'India 6-Month Bond Yield',
+    name: 'India 6M',
+  },
+  'rates-bonds/india-1-year-bond-yield': {
+    pairId: '24005',
+    title: 'India 1-Year Bond Yield',
+    name: 'India 1Y',
+  },
+  'rates-bonds/india-2-year-bond-yield': {
+    pairId: '24006',
+    title: 'India 2-Year Bond Yield',
+    name: 'India 2Y',
+  },
+  'rates-bonds/india-3-year-bond-yield': {
+    pairId: '24007',
+    title: 'India 3-Year Bond Yield',
+    name: 'India 3Y',
+  },
+  'rates-bonds/india-4-year-bond-yield': {
+    pairId: '24008',
+    title: 'India 4-Year Bond Yield',
+    name: 'India 4Y',
+  },
+  'rates-bonds/india-5-year-bond-yield': {
+    pairId: '24009',
+    title: 'India 5-Year Bond Yield',
+    name: 'India 5Y',
+  },
+  'rates-bonds/india-6-year-bond-yield': {
+    pairId: '24010',
+    title: 'India 6-Year Bond Yield',
+    name: 'India 6Y',
+  },
+  'rates-bonds/india-7-year-bond-yield': {
+    pairId: '24011',
+    title: 'India 7-Year Bond Yield',
+    name: 'India 7Y',
+  },
+  'rates-bonds/india-8-year-bond-yield': {
+    pairId: '24012',
+    title: 'India 8-Year Bond Yield',
+    name: 'India 8Y',
+  },
+  'rates-bonds/india-9-year-bond-yield': {
+    pairId: '24013',
+    title: 'India 9-Year Bond Yield',
+    name: 'India 9Y',
+  },
+  'rates-bonds/india-10-year-bond-yield': {
+    pairId: '24014',
+    title: 'India 10-Year Bond Yield',
+    name: 'India 10Y',
+  },
+  'rates-bonds/india-11-year-bond-yield': {
+    pairId: '24015',
+    title: 'India 11-Year Bond Yield',
+    name: 'India 11Y',
+  },
+  'rates-bonds/india-12-year-bond-yield': {
+    pairId: '24016',
+    title: 'India 12-Year Bond Yield',
+    name: 'India 12Y',
+  },
+  'rates-bonds/india-13-year-bond-yield': {
+    pairId: '24017',
+    title: 'India 13-Year Bond Yield',
+    name: 'India 13Y',
+  },
+  'rates-bonds/india-14-year-bond-yield': {
+    pairId: '24018',
+    title: 'India 14-Year Bond Yield',
+    name: 'India 14Y',
+  },
+  'rates-bonds/india-15-year-bond-yield': {
+    pairId: '24019',
+    title: 'India 15-Year Bond Yield',
+    name: 'India 15Y',
+  },
+  'rates-bonds/india-19-year-bond-yield': {
+    pairId: '24020',
+    title: 'India 19-Year Bond Yield',
+    name: 'India 19Y',
+  },
+  'rates-bonds/india-24-year-bond-yield': {
+    pairId: '24021',
+    title: 'India 24-Year Bond Yield',
+    name: 'India 24Y',
+  },
+  'rates-bonds/india-30-year-bond-yield': {
+    pairId: '24022',
+    title: 'India 30-Year Bond Yield',
+    name: 'India 30Y',
+  },
   'etfs/diamonds-trust': {
     pairId: '504',
     title: 'SPDR® Dow Jones Industrial Average ETF Trust (NYSE)',
