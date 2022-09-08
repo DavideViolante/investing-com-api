@@ -229,6 +229,11 @@ exports.mapping = {
     title: 'USD/KRW - US Dollar Korean Won',
     name: 'USD/KRW',
   },
+  'currencies/usd-inr': {
+    pairId: '160',
+    title: 'USD/INR - US Dollar Indian Rupee',
+    name: 'USD/INR',
+  },
   'currencies/xau-usd': {
     pairId: '68',
     title: 'XAU/USD - Gold Spot US Dollar',
