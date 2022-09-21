@@ -1,12 +1,12 @@
 {
   "name": "investing-com-api",
-  "version": "3.6.0",
+  "version": "4.0.0",
   "description": "Unofficial APIs for Investing.com website.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./",
-    "test": "nyc mocha --timeout 5000",
-    "coverage": "nyc --reporter=lcov --reporter=text mocha --timeout 5000"
+    "test": "nyc mocha --timeout 5000 --exit",
+    "coverage": "nyc --reporter=lcov --reporter=text mocha --timeout 5000 --exit"
   },
   "repository": {
     "type": "git",
@@ -31,7 +31,7 @@
   },
   "homepage": "https://github.com/DavideViolante/investing-com-api#readme",
   "dependencies": {
-    "axios": "^0.27.2"
+    "puppeteer": "^18.0.4"
   },
   "devDependencies": {
     "eslint": "^8.23.1",
