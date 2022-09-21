@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./",
-    "test": "nyc mocha --timeout 5000",
-    "coverage": "nyc --reporter=lcov --reporter=text mocha --timeout 5000"
+    "test": "nyc mocha --timeout 5000 --exit",
+    "coverage": "nyc --reporter=lcov --reporter=text mocha --timeout 5000 --exit"
   },
   "repository": {
     "type": "git",
