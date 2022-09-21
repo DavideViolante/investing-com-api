@@ -1,4 +1,4 @@
-const axios = require('axios');
+const puppeteer = require('puppeteer');
 const { mapping } = require('./mapping');
 const { mapResponse } = require('./functions');
 
@@ -12,16 +12,17 @@ const { mapResponse } = require('./functions');
  * @param {number} pointscount Number of results returned. Valid values: 60, 70, 120
  * @return {Array} An array of objects with date (timestamp) and value (number) properties
  */
-function callInvesting(pairId, period, interval, pointscount) {
-  return axios({
-    method: 'GET',
-    url: `https://api.investing.com/api/financialdata/${pairId}/historical/chart/`,
-    params: {
-      period,
-      interval,
-      pointscount,
-    },
-  });
+async function callInvesting(pairId, period, interval, pointscount) {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  // eslint-disable-next-line max-len
+  await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36');
+  // eslint-disable-next-line max-len
+  await page.goto(`https://api.investing.com/api/financialdata/${pairId}/historical/chart?period=${period}&interval=${interval}&pointscount=${pointscount}`);
+  const content = await page.evaluate(() => document.querySelector('body').textContent);
+  await browser.close();
+  const jsonContent = JSON.parse(content);
+  return jsonContent;
 }
 
 /**
@@ -45,7 +46,7 @@ async function investing(input, period = 'P1M', interval = 'P1D', pointscount = 
       throw Error(`No mapping found for ${input}, check mapping.js`);
     }
     const { data } = await callInvesting(endpoint.pairId, period, interval, pointscount);
-    const results = mapResponse(data.data);
+    const results = mapResponse(data);
     return results;
   } catch (err) {
     console.error(err.message);
