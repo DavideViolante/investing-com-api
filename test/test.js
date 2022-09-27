@@ -1,5 +1,6 @@
+const puppeteer = require('puppeteer');
 const assert = require('assert');
-const { investing } = require('../index');
+// const { investing } = require('../index');
 const { mapResponse } = require('../functions');
 
 const mockData = [
@@ -9,15 +10,26 @@ const mockData = [
   [1587945600000, 218, 0, 0],
 ];
 
+let jsonContent = {};
+
 describe('Tests for Investing.com unofficial APIs', () => {
-  it('should return undefined and print error if no input is given', async () => {
-    const response = await investing();
-    assert.strictEqual(response, undefined);
+  beforeAll(async () => {
+    const browser = await puppeteer.launch();
+    const page = await browser.newPage();
+    // eslint-disable-next-line max-len
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36');
+    // eslint-disable-next-line max-len
+    await page.goto(`https://api.investing.com/api/financialdata/1/historical/chart?period=P1W&interval=P1D&pointscount=120`);
+    const content = await page.evaluate(() => document.querySelector('body').textContent);
+    jsonContent = JSON.parse(content);
+    browser.close();
   });
 
-  it('should return undefined and print error if input is invalid', async () => {
-    const response = await investing('currencies/invalid');
-    assert.strictEqual(response, undefined);
+  it('should get data from investing.com APIs', async () => {
+    assert.ok(Array.isArray(jsonContent.data));
+    assert.ok(jsonContent.data.length > 0);
+    assert.ok(Array.isArray(jsonContent.data[0]));
+    assert.ok(jsonContent.data[0].length === 7);
   });
 
   it('should map an array of arrays to array of objects', () => {
@@ -26,6 +38,17 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.strictEqual(mockData[0][1], mappedResponse[0].value);
     assert.strictEqual(mockData[1][0], mappedResponse[1].date);
     assert.strictEqual(mockData[1][1], mappedResponse[1].value);
+  });
+
+  /* TESTS BEFORE INTRODUCING PUPPETEER
+  it('should return undefined and print error if no input is given', async () => {
+    const response = await investing();
+    assert.strictEqual(response, undefined);
+  });
+
+  it('should return undefined and print error if input is invalid', async () => {
+    const response = await investing('currencies/invalid');
+    assert.strictEqual(response, undefined);
   });
 
   it('should return data from investing.com with default params', async () => {
@@ -123,5 +146,5 @@ describe('Tests for Investing.com unofficial APIs', () => {
     const len = response.length;
     assert.ok(response);
     assert.ok(len);
-  });
+  }); */
 });
