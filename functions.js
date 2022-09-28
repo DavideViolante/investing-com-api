@@ -14,6 +14,17 @@ function mapResponse(array) {
   }));
 }
 
+/**
+ * Get JSON response from Investing APIs
+ * @param {*} page puppeteer page
+ * @return {Object} JSON response from Investing
+ */
+async function getJsonContent(page) {
+  const content = await page.evaluate(() => document.querySelector('body').textContent);
+  return JSON.parse(content);
+}
+
 module.exports = {
   mapResponse,
+  getJsonContent,
 };
