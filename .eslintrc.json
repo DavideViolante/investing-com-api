@@ -11,7 +11,7 @@
     },
     "rules": {
       "max-len": [
-        "error", 100
+        "error", 120
       ],
       "object-curly-spacing": [
         "error", "always"
