@@ -30,6 +30,9 @@
     "url": "https://github.com/DavideViolante/investing-com-api/issues"
   },
   "homepage": "https://github.com/DavideViolante/investing-com-api#readme",
+  "jest": {
+    "coveragePathIgnorePatterns": ["functions.js"]
+  },
   "dependencies": {
     "puppeteer": "^18.0.4"
   },
