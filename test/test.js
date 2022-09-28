@@ -31,21 +31,18 @@ describe('Tests for Investing.com unofficial APIs', () => {
     browser.close();
   });
 
-  it('should get data from investing.com APIs', async () => {
-    await page.goto(`https://api.investing.com/api/financialdata/1/historical/chart?period=P1M&interval=P1D&pointscount=120`);
-    const { data } = await getJsonContent(page);
-    assert.ok(Array.isArray(data));
-    assert.ok(data.length);
-    assert.ok(Array.isArray(data[0]));
-    assert.strictEqual(data[0].length, 7);
-  });
-
   it('should map an array of arrays to array of objects', () => {
     const mappedResponse = mapResponse(mockData);
     assert.strictEqual(mockData[0][0], mappedResponse[0].date);
     assert.strictEqual(mockData[0][1], mappedResponse[0].value);
     assert.strictEqual(mockData[1][0], mappedResponse[1].date);
     assert.strictEqual(mockData[1][1], mappedResponse[1].value);
+  });
+
+  it('should get json content from page', async () => {
+    await page.goto(`https://api.investing.com/api/financialdata/1/historical/chart?period=P1M&interval=P1D&pointscount=120`);
+    const { data } = await getJsonContent(page);
+    assert.ok(data);
   });
 
   it('should return undefined and print error if no input is given', async () => {
@@ -71,6 +68,15 @@ describe('Tests for Investing.com unofficial APIs', () => {
   it('should return error with invalid pointscount', async () => {
     const response = await investing('currencies/eur-usd', 'P1M', 'P1D', 20);
     assert.strictEqual(response, undefined);
+  });
+
+  it('should get data from investing.com APIs', async () => {
+    await page.goto(`https://api.investing.com/api/financialdata/1/historical/chart?period=P1M&interval=P1D&pointscount=120`);
+    const { data } = await getJsonContent(page);
+    assert.ok(Array.isArray(data));
+    assert.ok(data.length);
+    assert.ok(Array.isArray(data[0]));
+    assert.strictEqual(data[0].length, 7);
   });
 
   it('should return data from investing.com with default params', async () => {
