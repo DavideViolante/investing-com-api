@@ -489,20 +489,45 @@ exports.mapping = {
     title: 'Netflix Inc (NASDAQ)',
     name: 'Netflix',
   },
+  'rates-bonds/u.s.-1-month-bond-yield': {
+    pairId: '23697',
+    title: 'United States 1-Month Bond Yield (NYSE)',
+    name: 'U.S. 1M',
+  },
   'rates-bonds/u.s.-3-month-bond-yield': {
     pairId: '23698',
     title: 'United States 3-Month Bond Yield (NYSE)',
     name: 'U.S. 3M',
+  },
+  'rates-bonds/u.s.-6-month-bond-yield': {
+    pairId: '23699',
+    title: 'United States 6-Month Bond Yield (NYSE)',
+    name: 'U.S. 6M',
+  },
+  'rates-bonds/u.s.-1-year-bond-yield': {
+    pairId: '23700',
+    title: 'United States 1-year Bond Yield (NYSE)',
+    name: 'U.S. 1Y',
   },
   'rates-bonds/u.s.-2-year-bond-yield': {
     pairId: '23701',
     title: 'United States 2-Year (NYSE)',
     name: 'U.S. 2Y',
   },
+  'rates-bonds/u.s.-3-year-bond-yield': {
+    pairId: '23702',
+    title: 'United States 3-Year (NYSE)',
+    name: 'U.S. 3Y',
+  },
   'rates-bonds/u.s.-5-year-bond-yield': {
     pairId: '23703',
     title: 'United States 5-Year (NYSE)',
     name: 'U.S. 5Y',
+  },
+  'rates-bonds/u.s.-7-year-bond-yield': {
+    pairId: '23704',
+    title: 'United States 7-Year (NYSE)',
+    name: 'U.S. 7Y',
   },
   'rates-bonds/u.s.-10-year-bond-yield': {
     pairId: '23705',
