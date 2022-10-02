@@ -739,95 +739,90 @@ exports.mapping = {
     title: 'India 30-Year Bond Yield',
     name: 'India 30Y',
   },
-  'rates-bonds/uk-50-year-bond-yield': {
-      pairId: '23679',
-      title: 'UK 50-Year Bond Yield',
-      name: 'Uk 50Y'
-  },
-  'rates-bonds/uk-40-year-bond-yield': {
-      pairId: '23678',
-      title: 'UK 40-Year Bond Yield',
-      name: 'UK 40Y'
-  },
-  'rates-bonds/uk-30-year-bond-yield': {
-      pairId: '23677',
-      title: 'UK 30-Year Bond Yield',
-      name: 'UK 30Y'
-  },
-  'rates-bonds/uk-30-year-bond-yield': {
-      pairId: '23677',
-      title: 'UK 30-Year Bond Yield',
-      name: 'UK 30Y'
-  },
-  'rates-bonds/uk-25-year-bond-yield': {
-      pairId: '23676',
-      title: 'UK 25-Year Bond Yield',
-      name: 'UK 25Y'
-  },
-  'rates-bonds/uk-20-year-bond-yield': {
-      pairId: '23675',
-      title: 'UK 20-Year Bond Yield',
-      name: 'UK 20Y'
-  },
-  'rates-bonds/uk-15-year-bond-yield': {
-      pairId: '23674',
-      title: 'UK 15-Year Bond Yield',
-      name: 'UK 15Y'
-  },
-  'rates-bonds/uk-10-year-bond-yield': {
-      pairId: '23673',
-      title: 'UK 10-Year Bond Yield',
-      name: 'UK 10Y'
-  },
-  'rates-bonds/uk-9-year-bond-yield': {
-      pairId: '23672',
-      title: 'UK 9-Year Bond Yield',
-      name: 'UK 9Y'
-  },
-  'rates-bonds/uk-8-year-bond-yield': {
-      pairId: '23671',
-      title: 'UK 8-Year Bond Yield',
-      name: 'UK 8Y'
-  },
-  'rates-bonds/uk-7-year-bond-yield': {
-      pairId: '23670',
-      title: 'UK 7-Year Bond Yield',
-      name: 'UK 7Y'
-  },
-  'rates-bonds/uk-5-year-bond-yield': {
-      pairId: '23668',
-      title: 'UK 5-Year Bond Yield',
-      name: 'UK 5Y'
-  },
-  'rates-bonds/uk-3-year-bond-yield': {
-      pairId: '23666',
-      title: 'UK 3-Year Bond Yield',
-      name: 'UK 3Y'
-  },
-  'rates-bonds/uk-2-year-bond-yield': {
-      pairId: '23665',
-      title: 'UK 2-Year Bond Yield',
-      name: 'UK 2Y'
-  },
-  'rates-bonds/uk-1-year-bond-yield': {
-      pairId: '23664',
-      title: 'UK 1-Year Bond Yield',
-      name: 'UK 1Y'
-  },
-  'rates-bonds/uk-6-month-bond-yield': {
-      pairId: '23663',
-      title: 'UK 6-Month Bond Yield',
-      name: 'UK 6M',
+  'rates-bonds/uk-1-month-bond-yield': {
+    pairId: '23661',
+    title: 'UK 1-Month Bond Yield',
+    name: 'UK 1M',
   },
   'rates-bonds/uk-3-month-bond-yield': {
-      pairId: '23662',
-      title: 'UK 3-Month Bond Yield',
-      name: 'UK 3M'
+    pairId: '23662',
+    title: 'UK 3-Month Bond Yield',
+    name: 'UK 3M',
+  },  
+  'rates-bonds/uk-6-month-bond-yield': {
+    pairId: '23663',
+    title: 'UK 6-Month Bond Yield',
+    name: 'UK 6M',
   },
-  'rates-bonds/uk-1-month-bond-yield': {
-      pairId: '23661',
-      title: 'UK 1-Month Bond Yield',
-      name: 'UK 1M'
+  'rates-bonds/uk-1-year-bond-yield': {
+    pairId: '23664',
+    title: 'UK 1-Year Bond Yield',
+    name: 'UK 1Y'
+  },
+  'rates-bonds/uk-2-year-bond-yield': {
+    pairId: '23665',
+    title: 'UK 2-Year Bond Yield',
+    name: 'UK 2Y'
+  },
+  'rates-bonds/uk-3-year-bond-yield': {
+    pairId: '23666',
+    title: 'UK 3-Year Bond Yield',
+    name: 'UK 3Y'
+  },
+  'rates-bonds/uk-5-year-bond-yield': {
+    pairId: '23668',
+    title: 'UK 5-Year Bond Yield',
+    name: 'UK 5Y'
+  },
+  'rates-bonds/uk-7-year-bond-yield': {
+    pairId: '23670',
+    title: 'UK 7-Year Bond Yield',
+    name: 'UK 7Y'
+  },
+  'rates-bonds/uk-8-year-bond-yield': {
+    pairId: '23671',
+    title: 'UK 8-Year Bond Yield',
+    name: 'UK 8Y'
+  },
+  'rates-bonds/uk-9-year-bond-yield': {
+    pairId: '23672',
+    title: 'UK 9-Year Bond Yield',
+    name: 'UK 9Y'
+  },
+  'rates-bonds/uk-10-year-bond-yield': {
+    pairId: '23673',
+    title: 'UK 10-Year Bond Yield',
+    name: 'UK 10Y'
+  },
+  'rates-bonds/uk-15-year-bond-yield': {
+    pairId: '23674',
+    title: 'UK 15-Year Bond Yield',
+    name: 'UK 15Y'
+  },
+  'rates-bonds/uk-20-year-bond-yield': {
+    pairId: '23675',
+    title: 'UK 20-Year Bond Yield',
+    name: 'UK 20Y'
+  },
+  'rates-bonds/uk-25-year-bond-yield': {
+    pairId: '23676',
+    title: 'UK 25-Year Bond Yield',
+    name: 'UK 25Y'
+  },
+  'rates-bonds/uk-30-year-bond-yield': {
+    pairId: '23677',
+    title: 'UK 30-Year Bond Yield',
+    name: 'UK 30Y'
+  },
+  'rates-bonds/uk-40-year-bond-yield': {
+    pairId: '23678',
+    title: 'UK 40-Year Bond Yield',
+    name: 'UK 40Y'
+  },
+  'rates-bonds/uk-50-year-bond-yield': {
+    pairId: '23679',
+    title: 'UK 50-Year Bond Yield',
+    name: 'Uk 50Y'
   },
   'etfs/diamonds-trust': {
     pairId: '504',
