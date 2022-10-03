@@ -572,7 +572,7 @@ exports.mapping = {
   'rates-bonds/uk-50-year-bond-yield': {
     pairId: '23679',
     title: 'UK 50-Year Bond Yield',
-    name: 'Uk 50Y'
+    name: 'UK 50Y'
   },
   'rates-bonds/u.s.-1-month-bond-yield': {
     pairId: '23697',
