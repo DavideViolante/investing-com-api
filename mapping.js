@@ -552,27 +552,27 @@ exports.mapping = {
   'rates-bonds/uk-20-year-bond-yield': {
     pairId: '23675',
     title: 'UK 20-Year Bond Yield',
-    name: 'UK 20Y'
+    name: 'UK 20Y',
   },
   'rates-bonds/uk-25-year-bond-yield': {
     pairId: '23676',
     title: 'UK 25-Year Bond Yield',
-    name: 'UK 25Y'
+    name: 'UK 25Y',
   },
   'rates-bonds/uk-30-year-bond-yield': {
     pairId: '23677',
     title: 'UK 30-Year Bond Yield',
-    name: 'UK 30Y'
+    name: 'UK 30Y',
   },
   'rates-bonds/uk-40-year-bond-yield': {
     pairId: '23678',
     title: 'UK 40-Year Bond Yield',
-    name: 'UK 40Y'
+    name: 'UK 40Y',
   },
   'rates-bonds/uk-50-year-bond-yield': {
     pairId: '23679',
     title: 'UK 50-Year Bond Yield',
-    name: 'UK 50Y'
+    name: 'UK 50Y',
   },
   'rates-bonds/u.s.-1-month-bond-yield': {
     pairId: '23697',
