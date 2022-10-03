@@ -498,7 +498,7 @@ exports.mapping = {
     pairId: '23662',
     title: 'UK 3-Month Bond Yield',
     name: 'UK 3M',
-  },  
+  },
   'rates-bonds/uk-6-month-bond-yield': {
     pairId: '23663',
     title: 'UK 6-Month Bond Yield',
@@ -507,47 +507,47 @@ exports.mapping = {
   'rates-bonds/uk-1-year-bond-yield': {
     pairId: '23664',
     title: 'UK 1-Year Bond Yield',
-    name: 'UK 1Y'
+    name: 'UK 1Y',
   },
   'rates-bonds/uk-2-year-bond-yield': {
     pairId: '23665',
     title: 'UK 2-Year Bond Yield',
-    name: 'UK 2Y'
+    name: 'UK 2Y',
   },
   'rates-bonds/uk-3-year-bond-yield': {
     pairId: '23666',
     title: 'UK 3-Year Bond Yield',
-    name: 'UK 3Y'
+    name: 'UK 3Y',
   },
   'rates-bonds/uk-5-year-bond-yield': {
     pairId: '23668',
     title: 'UK 5-Year Bond Yield',
-    name: 'UK 5Y'
+    name: 'UK 5Y',
   },
   'rates-bonds/uk-7-year-bond-yield': {
     pairId: '23670',
     title: 'UK 7-Year Bond Yield',
-    name: 'UK 7Y'
+    name: 'UK 7Y',
   },
   'rates-bonds/uk-8-year-bond-yield': {
     pairId: '23671',
     title: 'UK 8-Year Bond Yield',
-    name: 'UK 8Y'
+    name: 'UK 8Y',
   },
   'rates-bonds/uk-9-year-bond-yield': {
     pairId: '23672',
     title: 'UK 9-Year Bond Yield',
-    name: 'UK 9Y'
+    name: 'UK 9Y',
   },
   'rates-bonds/uk-10-year-bond-yield': {
     pairId: '23673',
     title: 'UK 10-Year Bond Yield',
-    name: 'UK 10Y'
+    name: 'UK 10Y',
   },
   'rates-bonds/uk-15-year-bond-yield': {
     pairId: '23674',
     title: 'UK 15-Year Bond Yield',
-    name: 'UK 15Y'
+    name: 'UK 15Y',
   },
   'rates-bonds/uk-20-year-bond-yield': {
     pairId: '23675',
