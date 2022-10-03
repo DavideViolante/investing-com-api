@@ -20,6 +20,7 @@ function mapResponse(array) {
  * @return {Object} JSON response from Investing
  */
 async function getJsonContent(page) {
+  // eslint-disable-next-line no-undef
   const content = await page.evaluate(() => document.querySelector('body').textContent);
   return JSON.parse(content);
 }

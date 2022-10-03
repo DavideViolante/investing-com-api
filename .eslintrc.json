@@ -5,7 +5,7 @@
       "node": true,
       "jest": true
     },
-    "extends": "google",
+    "extends": ["eslint:recommended", "google"],
     "parserOptions": {
       "ecmaVersion": 12
     },
