@@ -824,6 +824,61 @@ exports.mapping = {
     title: 'India 30-Year Bond Yield',
     name: 'India 30Y',
   },
+  'rates-bonds/aus-5-year-cds': {
+    pairId: '1116310',
+    title: 'Australia 5Y Credit Default Swap',
+    name: 'Australia 5Y CDS',
+  },
+  'rates-bonds/bra-5-year-cds': {
+    pairId: '1116031',
+    title: 'Brasil 5Y Credit Default Swap',
+    name: 'Brasil 5Y CDS',
+  },
+  'rates-bonds/can-5-year-cds': {
+    pairId: '1158920',
+    title: 'Canada 5Y Credit Default Swap',
+    name: 'Canada 5Y CDS',
+  },
+  'rates-bonds/esp-5-year-cds': {
+    pairId: '1115764',
+    title: 'Spain 5Y Credit Default Swap',
+    name: 'Spain 5Y CDS',
+  },
+  'rates-bonds/fra-5-year-cds': {
+    pairId: '1158922',
+    title: 'France 5Y Credit Default Swap',
+    name: 'France 5Y CDS',
+  },
+  'rates-bonds/gbr-5-year-cds': {
+    pairId: '1115185',
+    title: 'United Kingdom 5Y Credit Default Swap',
+    name: 'United Kingdom 5Y CDS',
+  },
+  'rates-bonds/ita-5-year-cds': {
+    pairId: '1115161',
+    title: 'Italy 5Y Credit Default Swap',
+    name: 'Italy 5Y CDS',
+  },
+  'rates-bonds/mex-5-year-cds': {
+    pairId: '1158921',
+    title: 'Mexico 5Y Credit Default Swap',
+    name: 'Mexico 5Y CDS',
+  },
+  'rates-bonds/rus-5-year-cds': {
+    pairId: '1115195',
+    title: 'Russia 5Y Credit Default Swap',
+    name: 'Russia 5Y CDS',
+  },
+  'rates-bonds/tur-5-year-cds': {
+    pairId: '1096486',
+    title: 'Turkey 5Y Credit Default Swap',
+    name: 'Turkey 5Y CDS',
+  },
+  'rates-bonds/usa-5-year-cds': {
+    pairId: '1115808',
+    title: 'United States 5Y Credit Default Swap',
+    name: 'United States 5Y CDS',
+  },
   'etfs/diamonds-trust': {
     pairId: '504',
     title: 'SPDR® Dow Jones Industrial Average ETF Trust (NYSE)',
