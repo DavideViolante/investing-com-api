@@ -14,8 +14,9 @@ const { investing } = require('investing-com-api');
 
 async function main() {
   try {
-    const response1 = await investing('currencies/eur-usd');
+    const response1 = await investing('currencies/eur-usd'); // Providing a valid mapping.js key
     const response2 = await investing('currencies/eur-usd', 'P1M', 'P1D'); // With optional params
+    const response3 = await investing('1'); // Providing the pairId directly, even if not present in mapping.js
   } catch (err) {
     console.error(err);
   }
@@ -48,7 +49,7 @@ async function main() {
 
 ### Inputs
 Only input is required, other params are optional.
-- **input** _String_: input string, see [mapping.js](https://github.com/DavideViolante/investing-com-api/blob/master/mapping.js) keys. (Required)
+- **input** _String_: input string, see [mapping.js](https://github.com/DavideViolante/investing-com-api/blob/master/mapping.js) keys, or provide a valid investing.com pairId. (Required)
 - **period** _String_: Period of time, window size. Default P1M (1 month). Valid values: P1D, P1W, P1M, P3M, P6M, P1Y, P5Y, MAX.
 - **interval** _Number_: Interval between results. Default P1D (1 day). Valid values: PT1M, PT5M, PT15M, PT30M, PT1H, PT5H, P1D, P1W, P1M.
 - **pointscount** _Number_: number of total results. Valid values seems to be 60, 70 or 120.

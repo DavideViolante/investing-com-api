@@ -30,7 +30,7 @@ function checkParams(input, period, interval, pointscount) {
 
 /**
  * Call Investing
- * @param {string} pairId Input string, see mapping.js keys
+ * @param {string} pairId Input string, see mapping.js keys, or provide a valid investing.com pairId
  * @param {string} period Period of time, window size.
  *                        Valid values: P1D, P1W, P1M, P3M, P6M, P1Y, P5Y, MAX
  * @param {string} interval Interval between results.
@@ -52,7 +52,7 @@ async function callInvesting(pairId, period, interval, pointscount) {
 
 /**
  * Call Investing
- * @param {string} input Input string, see mapping.js keys
+ * @param {string} input Input string, see mapping.js keys, or provide a valid investing.com pairId
  * @param {string} period Period of time, window size. Default P1M (1 month)
  *                        Valid values: P1D, P1W, P1M, P3M, P6M, P1Y, P5Y, MAX
  * @param {string} interval Interval between results. Default P1D (1 day)
@@ -64,12 +64,12 @@ async function callInvesting(pairId, period, interval, pointscount) {
 async function investing(input, period = 'P1M', interval = 'P1D', pointscount = 120) {
   try {
     checkParams(input, period, interval, pointscount);
-    const endpoint = mapping[input];
-    if (!endpoint) {
-      throw Error(`No mapping found for ${input}, check mapping.js`);
-    }
-    const { data } = await callInvesting(endpoint.pairId, period, interval, pointscount);
+    const pairId = mapping[input]?.pairId || input;
+    const { data } = await callInvesting(pairId, period, interval, pointscount);
     const results = mapResponse(data);
+    if (!results.length) {
+      throw Error('Wrong input or pairId');
+    }
     return results;
   } catch (err) {
     console.error(err.message);
