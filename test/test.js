@@ -86,7 +86,7 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.ok(data.length);
     assert.ok(Array.isArray(data[0]));
     assert.strictEqual(data[0].length, 7);
-    assert.ok(data.length >= 20 && data.length <= 23);
+    assert.ok(data.length >= 20 && data.length <= 24);
   });
 
   it('should return data from investing.com with custom period', async () => {
@@ -116,6 +116,6 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.ok(data.length);
     assert.ok(Array.isArray(data[0]));
     assert.strictEqual(data[0].length, 7);
-    assert.ok(data.length >= 20 && data.length <= 23);
+    assert.ok(data.length >= 20 && data.length <= 24);
   });
 });
