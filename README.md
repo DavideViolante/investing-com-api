@@ -53,6 +53,7 @@ Only input is required, other params are optional.
 - **period** _String_: Period of time, window size. Default P1M (1 month). Valid values: P1D, P1W, P1M, P3M, P6M, P1Y, P5Y, MAX.
 - **interval** _Number_: Interval between results. Default P1D (1 day). Valid values: PT1M, PT5M, PT15M, PT30M, PT1H, PT5H, P1D, P1W, P1M.
 - **pointscount** _Number_: number of total results. Valid values seems to be 60, 70 or 120.
+- **pptrLaunchOptions** _Any_: Puppeteer launch options, see [official website](https://pptr.dev/api/puppeteer.launchoptions).
 
 ### Run tests
 `npm test`
