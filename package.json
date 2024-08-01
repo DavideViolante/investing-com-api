@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint ./",
-    "test": "jest",
-    "coverage": "jest --coverage"
+    "test": "jest --forceExit",
+    "coverage": "jest --coverage --forceExit"
   },
   "repository": {
     "type": "git",
