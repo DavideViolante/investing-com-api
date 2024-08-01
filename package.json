@@ -34,7 +34,7 @@
     "coveragePathIgnorePatterns": ["functions.js"]
   },
   "dependencies": {
-    "puppeteer": "^22.3.0"
+    "puppeteer": "^22.15.0"
   },
   "devDependencies": {
     "eslint": "^8.28.0",
