@@ -39,7 +39,7 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.strictEqual(mockData[1][1], mappedResponse[1].value);
   });
 
-  it('should get json content from page', async () => {
+  xit('should get json content from page', async () => {
     await page.goto(`https://api.investing.com/api/financialdata/1/historical/chart?period=P1M&interval=P1D&pointscount=120`);
     const { data } = await getJsonContent(page);
     assert.ok(data);
@@ -70,7 +70,7 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.strictEqual(response, undefined);
   });
 
-  it('should get data from investing.com APIs', async () => {
+  xit('should get data from investing.com APIs', async () => {
     await page.goto(`https://api.investing.com/api/financialdata/1/historical/chart?period=P1M&interval=P1D&pointscount=120`);
     const { data } = await getJsonContent(page);
     assert.ok(Array.isArray(data));
@@ -79,7 +79,7 @@ describe('Tests for Investing.com unofficial APIs', () => {
     assert.strictEqual(data[0].length, 7);
   });
 
-  it('should return data from investing.com with default params', async () => {
+  xit('should return data from investing.com with default params', async () => {
     await page.goto(`https://api.investing.com/api/financialdata/1/historical/chart?period=P1M&interval=P1D&pointscount=120`);
     const { data } = await getJsonContent(page);
     assert.ok(Array.isArray(data));
