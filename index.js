@@ -37,7 +37,7 @@ function checkParams(input, period, interval, pointscount) {
  *                          Valid values: PT1M, PT5M, PT15M, PT30M, PT1H, PT5H, P1D, P1W, P1M
  * @param {number} pointscount Number of results returned. Valid values: 60, 70, 120
  * @param {*} pptrLaunchOptions Puppeteer launch options, see https://pptr.dev/api/puppeteer.launchoptions
- * @return {Array} An array of objects with date (timestamp) and value (number) properties
+ * @return {Promise<Array>} An array of arrays with date (timestamp) and values (number) properties
  */
 async function callInvesting(pairId, period, interval, pointscount, pptrLaunchOptions) {
   const browser = await puppeteer.launch(pptrLaunchOptions);
@@ -48,7 +48,7 @@ async function callInvesting(pairId, period, interval, pointscount, pptrLaunchOp
   await page.goto(`https://api.investing.com/api/financialdata/${pairId}/historical/chart?period=${period}&interval=${interval}&pointscount=${pointscount}`);
   const jsonContent = await getJsonContent(page);
   await browser.close();
-  return jsonContent;
+  return jsonContent.data;
 }
 
 /**
@@ -61,14 +61,14 @@ async function callInvesting(pairId, period, interval, pointscount, pptrLaunchOp
  * @param {number} [pointscount] Number of results returned, but depends on period and interval too.
  *                             Valid values: 60, 70, 120
  * @param {*} [pptrLaunchOptions] Puppeteer launch options, see https://pptr.dev/api/puppeteer.launchoptions
- * @return {Array} An array of objects with date (timestamp) and value (number) properties
+ * @return {Promise<Array>} An array of objects with date (timestamp), value (number) and other (number) properties
  */
 async function investing(input, period = 'P1M', interval = 'P1D', pointscount = 120, pptrLaunchOptions) {
   try {
     checkParams(input, period, interval, pointscount);
     const pairId = mapping[input]?.pairId || input;
-    const { data } = await callInvesting(pairId, period, interval, pointscount, pptrLaunchOptions);
-    const results = mapResponse(data);
+    const resInvesting = await callInvesting(pairId, period, interval, pointscount, pptrLaunchOptions);
+    const results = mapResponse(resInvesting);
     if (!results.length) {
       throw Error('Wrong input or pairId');
     }
@@ -80,5 +80,7 @@ async function investing(input, period = 'P1M', interval = 'P1D', pointscount = 
     }
   }
 }
+
+// investing('1').then(console.log);
 
 exports.investing = investing;
